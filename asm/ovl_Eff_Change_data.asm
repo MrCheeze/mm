@@ -1,0 +1,59 @@
+.set noat # allow use of $at
+.set noreorder # don't insert nops after branches
+.set gp=64 # allow use of 64bit registers
+.macro glabel label
+    .global \label
+    \label:
+.endm
+
+glabel D_80A4C900
+/* 000284 0x80A4C900 */ .word	0x01600700
+/* 000285 0x80A4C904 */ .word	0x00000010
+/* 000286 0x80A4C908 */ .word	0x00010000
+/* 000287 0x80A4C90C */ .word	0x000001CC
+/* 000288 0x80A4C910 */ .word	EffChange_Init
+/* 000289 0x80A4C914 */ .word	EffChange_Destroy
+/* 000290 0x80A4C918 */ .word	EffChange_Update
+/* 000291 0x80A4C91C */ .word	0x00000000
+glabel D_80A4C920
+/* 000292 0x80A4C920 */ .word	0xFFFFAA00
+/* 000293 0x80A4C924 */ .word	0x6400FFFF
+/* 000294 0x80A4C928 */ .word	0xAAC80000
+/* 000295 0x80A4C92C */ .word	0xAAFFFF00
+/* 000296 0x80A4C930 */ .word	0x64FFFFFF
+/* 000297 0x80A4C934 */ .word	0xAAC89600
+/* 000298 0x80A4C938 */ .word	0xFFFFAA00
+/* 000299 0x80A4C93C */ .word	0x6400FFFF
+/* 000300 0x80A4C940 */ .word	0xAA006400
+/* 000301 0x80A4C944 */ .word	0xFFFFAA00
+/* 000302 0x80A4C948 */ .word	0x6400FFFF
+/* 000303 0x80A4C94C */ .word	0xAA006400
+glabel D_80A4C950
+/* 000304 0x80A4C950 */ .word	0x3F2AAAAB
+glabel D_80A4C954
+/* 000305 0x80A4C954 */ .word	0x3B808081
+/* 000306 0x80A4C958 */ .word	0x00000000
+/* 000307 0x80A4C95C */ .word	0x00000000
+glabel effChangeOverlayInfo
+/* 000308 0x80A4C960 */ .word	0x00000470
+/* 000309 0x80A4C964 */ .word	0x00000050
+/* 000310 0x80A4C968 */ .word	0x00000010
+/* 000311 0x80A4C96C */ .word	0x00000000
+/* 000312 0x80A4C970 */ .word	0x0000000E
+glabel effChangeOverlayRelocations
+/* 000313 0x80A4C974 */ .word	0x45000018
+/* 000314 0x80A4C978 */ .word	0x46000020
+/* 000315 0x80A4C97C */ .word	0x4500001C
+/* 000316 0x80A4C980 */ .word	0x46000024
+/* 000317 0x80A4C984 */ .word	0x44000034
+/* 000318 0x80A4C988 */ .word	0x45000094
+/* 000319 0x80A4C98C */ .word	0x46000098
+/* 000320 0x80A4C990 */ .word	0x450000F4
+/* 000321 0x80A4C994 */ .word	0x460000FC
+/* 000322 0x80A4C998 */ .word	0x45000254
+/* 000323 0x80A4C99C */ .word	0x46000258
+/* 000324 0x80A4C9A0 */ .word	0x82000010
+/* 000325 0x80A4C9A4 */ .word	0x82000014
+/* 000326 0x80A4C9A8 */ .word	0x82000018
+glabel effChangeOverlayInfoOffset
+/* 000327 0x80A4C9AC */ .word	0x00000050

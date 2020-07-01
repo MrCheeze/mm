@@ -1,0 +1,72 @@
+.set noat # allow use of $at
+.set noreorder # don't insert nops after branches
+.set gp=64 # allow use of 64bit registers
+.macro glabel label
+    .global \label
+    \label:
+.endm
+
+glabel D_80C10690
+/* 000432 0x80C10690 */ .word	0x02900400
+/* 000433 0x80C10694 */ .word	0x00000009
+/* 000434 0x80C10698 */ .word	0x01290000
+/* 000435 0x80C1069C */ .word	0x000002B4
+/* 000436 0x80C106A0 */ .word	EnRecepgirl_Init
+/* 000437 0x80C106A4 */ .word	EnRecepgirl_Destroy
+/* 000438 0x80C106A8 */ .word	EnRecepgirl_Update
+/* 000439 0x80C106AC */ .word	EnRecepgirl_Draw
+glabel D_80C106B0
+/* 000440 0x80C106B0 */ .word	0x0600F8F0
+/* 000441 0x80C106B4 */ .word	0x0600FCF0
+/* 000442 0x80C106B8 */ .word	0x060100F0
+/* 000443 0x80C106BC */ .word	0x0600FCF0
+glabel D_80C106C0
+/* 000444 0x80C106C0 */ .word	0x801F0006
+/* 000445 0x80C106C4 */ .word	0x305403E8
+glabel D_80C106C8
+/* 000446 0x80C106C8 */ .word	0x00000000
+/* 000447 0x80C106CC */ .word	0x00000000
+glabel D_80C106D0
+/* 000448 0x80C106D0 */ .word	0x3CA3D70A
+/* 000449 0x80C106D4 */ .word	0x00000000
+/* 000450 0x80C106D8 */ .word	0x00000000
+/* 000451 0x80C106DC */ .word	0x00000000
+glabel enRecepgirlOverlayInfo
+/* 000452 0x80C106E0 */ .word	0x000006C0
+/* 000453 0x80C106E4 */ .word	0x00000040
+/* 000454 0x80C106E8 */ .word	0x00000010
+/* 000455 0x80C106EC */ .word	0x00000000
+/* 000456 0x80C106F0 */ .word	0x0000001E
+glabel enRecepgirlOverlayRelocations
+/* 000457 0x80C106F4 */ .word	0x4500001C
+/* 000458 0x80C106F8 */ .word	0x46000020
+/* 000459 0x80C106FC */ .word	0x45000074
+/* 000460 0x80C10700 */ .word	0x46000078
+/* 000461 0x80C10704 */ .word	0x4500007C
+/* 000462 0x80C10708 */ .word	0x46000080
+/* 000463 0x80C1070C */ .word	0x45000088
+/* 000464 0x80C10710 */ .word	0x4600008C
+/* 000465 0x80C10714 */ .word	0x450000A8
+/* 000466 0x80C10718 */ .word	0x460000AC
+/* 000467 0x80C1071C */ .word	0x440000DC
+/* 000468 0x80C10720 */ .word	0x45000140
+/* 000469 0x80C10724 */ .word	0x46000144
+/* 000470 0x80C10728 */ .word	0x450001B0
+/* 000471 0x80C1072C */ .word	0x460001B4
+/* 000472 0x80C10730 */ .word	0x44000240
+/* 000473 0x80C10734 */ .word	0x450002E8
+/* 000474 0x80C10738 */ .word	0x460002EC
+/* 000475 0x80C1073C */ .word	0x440003FC
+/* 000476 0x80C10740 */ .word	0x4400056C
+/* 000477 0x80C10744 */ .word	0x45000660
+/* 000478 0x80C10748 */ .word	0x46000670
+/* 000479 0x80C1074C */ .word	0x45000664
+/* 000480 0x80C10750 */ .word	0x46000674
+/* 000481 0x80C10754 */ .word	0x45000678
+/* 000482 0x80C10758 */ .word	0x4600068C
+/* 000483 0x80C1075C */ .word	0x82000010
+/* 000484 0x80C10760 */ .word	0x82000014
+/* 000485 0x80C10764 */ .word	0x82000018
+/* 000486 0x80C10768 */ .word	0x8200001C
+glabel enRecepgirlOverlayInfoOffset
+/* 000487 0x80C1076C */ .word	0x00000090

@@ -1,0 +1,45 @@
+.set noat # allow use of $at
+.set noreorder # don't insert nops after branches
+.set gp=64 # allow use of 64bit registers
+.macro glabel label
+    .global \label
+    \label:
+.endm
+
+glabel __switch_D_801DD7F0
+/* 319308 0x801DD7F0 */ .word	.L_800F4688
+/* 319309 0x801DD7F4 */ .word	.L_800F46D4
+/* 319310 0x801DD7F8 */ .word	.L_800F46D4
+/* 319311 0x801DD7FC */ .word	.L_800F46D4
+/* 319312 0x801DD800 */ .word	.L_800F4648
+/* 319313 0x801DD804 */ .word	.L_800F46D4
+/* 319314 0x801DD808 */ .word	.L_800F46D4
+/* 319315 0x801DD80C */ .word	.L_800F46D4
+/* 319316 0x801DD810 */ .word	.L_800F46D4
+/* 319317 0x801DD814 */ .word	.L_800F46D4
+/* 319318 0x801DD818 */ .word	.L_800F46D4
+/* 319319 0x801DD81C */ .word	.L_800F46D4
+/* 319320 0x801DD820 */ .word	.L_800F46D4
+/* 319321 0x801DD824 */ .word	.L_800F46D4
+/* 319322 0x801DD828 */ .word	.L_800F46D4
+/* 319323 0x801DD82C */ .word	.L_800F46D4
+/* 319324 0x801DD830 */ .word	.L_800F46D4
+/* 319325 0x801DD834 */ .word	.L_800F46D4
+/* 319326 0x801DD838 */ .word	.L_800F46D4
+/* 319327 0x801DD83C */ .word	.L_800F46D4
+/* 319328 0x801DD840 */ .word	.L_800F46D4
+/* 319329 0x801DD844 */ .word	.L_800F46D4
+/* 319330 0x801DD848 */ .word	.L_800F46D4
+/* 319331 0x801DD84C */ .word	.L_800F46D4
+/* 319332 0x801DD850 */ .word	.L_800F4588
+/* 319333 0x801DD854 */ .word	.L_800F46CC
+/* 319334 0x801DD858 */ .word	.L_800F46B8
+/* 319335 0x801DD85C */ .word	.L_800F4618
+/* 319336 0x801DD860 */ .word	.L_800F46D4
+/* 319337 0x801DD864 */ .word	.L_800F4678
+/* 319338 0x801DD868 */ .word	.L_800F46D4
+/* 319339 0x801DD86C */ .word	.L_800F46D4
+/* 319340 0x801DD870 */ .word	.L_800F45E8
+/* 319341 0x801DD874 */ .word	.L_800F45F8
+/* 319342 0x801DD878 */ .word	.L_800F4608
+/* 319343 0x801DD87C */ .word	0x00000000

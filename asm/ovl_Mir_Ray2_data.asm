@@ -1,0 +1,63 @@
+.set noat # allow use of $at
+.set noreorder # don't insert nops after branches
+.set gp=64 # allow use of 64bit registers
+.macro glabel label
+    .global \label
+    \label:
+.endm
+
+glabel D_80AF4330
+/* 000240 0x80AF4330 */ .word	0x01D00700
+/* 000241 0x80AF4334 */ .word	0x00000030
+/* 000242 0x80AF4338 */ .word	0x00870000
+/* 000243 0x80AF433C */ .word	0x000001C0
+/* 000244 0x80AF4340 */ .word	MirRay2_Init
+/* 000245 0x80AF4344 */ .word	MirRay2_Destroy
+/* 000246 0x80AF4348 */ .word	MirRay2_Update
+/* 000247 0x80AF434C */ .word	MirRay2_Draw
+glabel D_80AF4350
+/* 000248 0x80AF4350 */ .word	0x00000000
+/* 000249 0x80AF4354 */ .word	0x00200000
+/* 000250 0x80AF4358 */ .word	0x00000000
+/* 000251 0x80AF435C */ .word	0x00000000
+/* 000252 0x80AF4360 */ .word	0x00000000
+/* 000253 0x80AF4364 */ .word	0x01000000
+/* 000254 0x80AF4368 */ .word	0x00000000
+/* 000255 0x80AF436C */ .word	0x00000000
+/* 000256 0x80AF4370 */ .word	0x00320064
+glabel D_80AF4374
+/* 000257 0x80AF4374 */ .word	0x0A210000
+/* 000258 0x80AF4378 */ .word	0x00000000
+/* 000259 0x80AF437C */ .word	0x00000001
+/* 000260 0x80AF4380 */ .word	D_80AF4350
+/* 000261 0x80AF4384 */ .word	0x00000000
+/* 000262 0x80AF4388 */ .word	0x00000000
+/* 000263 0x80AF438C */ .word	0x00000000
+glabel D_80AF4390
+/* 000264 0x80AF4390 */ .word	0x3CA3D70A
+/* 000265 0x80AF4394 */ .word	0x00000000
+/* 000266 0x80AF4398 */ .word	0x00000000
+/* 000267 0x80AF439C */ .word	0x00000000
+glabel mirRay2OverlayInfo
+/* 000268 0x80AF43A0 */ .word	0x000003C0
+/* 000269 0x80AF43A4 */ .word	0x00000060
+/* 000270 0x80AF43A8 */ .word	0x00000010
+/* 000271 0x80AF43AC */ .word	0x00000000
+/* 000272 0x80AF43B0 */ .word	0x0000000D
+glabel mirRay2OverlayRelocations
+/* 000273 0x80AF43B4 */ .word	0x450001AC
+/* 000274 0x80AF43B8 */ .word	0x460001B0
+/* 000275 0x80AF43BC */ .word	0x440001DC
+/* 000276 0x80AF43C0 */ .word	0x45000208
+/* 000277 0x80AF43C4 */ .word	0x46000218
+/* 000278 0x80AF43C8 */ .word	0x44000228
+/* 000279 0x80AF43CC */ .word	0x44000330
+/* 000280 0x80AF43D0 */ .word	0x4400037C
+/* 000281 0x80AF43D4 */ .word	0x82000010
+/* 000282 0x80AF43D8 */ .word	0x82000014
+/* 000283 0x80AF43DC */ .word	0x82000018
+/* 000284 0x80AF43E0 */ .word	0x8200001C
+/* 000285 0x80AF43E4 */ .word	0x82000050
+/* 000286 0x80AF43E8 */ .word	0x00000000
+glabel mirRay2OverlayInfoOffset
+/* 000287 0x80AF43EC */ .word	0x00000050

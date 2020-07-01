@@ -1,0 +1,68 @@
+.set noat # allow use of $at
+.set noreorder # don't insert nops after branches
+.set gp=64 # allow use of 64bit registers
+.macro glabel label
+    .global \label
+    \label:
+.endm
+
+glabel D_80C06440
+/* 000628 0x80C06440 */ .word	0x02820600
+/* 000629 0x80C06444 */ .word	0x00000010
+/* 000630 0x80C06448 */ .word	0x02800000
+/* 000631 0x80C0644C */ .word	0x00002A44
+/* 000632 0x80C06450 */ .word	EnBombal_Init
+/* 000633 0x80C06454 */ .word	EnBombal_Destroy
+/* 000634 0x80C06458 */ .word	EnBombal_Update
+/* 000635 0x80C0645C */ .word	EnBombal_Draw
+glabel D_80C06460
+/* 000636 0x80C06460 */ .word	0x0A000900
+/* 000637 0x80C06464 */ .word	0x20010000
+/* 000638 0x80C06468 */ .word	0x00000000
+/* 000639 0x80C0646C */ .word	0x00000000
+/* 000640 0x80C06470 */ .word	0x00000000
+/* 000641 0x80C06474 */ .word	0x004138B0
+/* 000642 0x80C06478 */ .word	0x00000000
+/* 000643 0x80C0647C */ .word	0x00010000
+/* 000644 0x80C06480 */ .word	0x003C005A
+/* 000645 0x80C06484 */ .word	0xFFCE0000
+/* 000646 0x80C06488 */ .word	0x00000000
+/* 000647 0x80C0648C */ .word	0x00000000
+glabel D_80C06490
+/* 000648 0x80C06490 */ .word	0x3DCCCCCD
+glabel D_80C06494
+/* 000649 0x80C06494 */ .word	0x44BB8000
+glabel D_80C06498
+/* 000650 0x80C06498 */ .word	0x3C8EFA35
+/* 000651 0x80C0649C */ .word	0x00000000
+glabel enBombalOverlayInfo
+/* 000652 0x80C064A0 */ .word	0x000009D0
+/* 000653 0x80C064A4 */ .word	0x00000050
+/* 000654 0x80C064A8 */ .word	0x00000010
+/* 000655 0x80C064AC */ .word	0x00000000
+/* 000656 0x80C064B0 */ .word	0x00000016
+glabel enBombalOverlayRelocations
+/* 000657 0x80C064B4 */ .word	0x45000030
+/* 000658 0x80C064B8 */ .word	0x46000034
+/* 000659 0x80C064BC */ .word	0x45000058
+/* 000660 0x80C064C0 */ .word	0x4600005C
+/* 000661 0x80C064C4 */ .word	0x4400006C
+/* 000662 0x80C064C8 */ .word	0x450000B4
+/* 000663 0x80C064CC */ .word	0x460000B8
+/* 000664 0x80C064D0 */ .word	0x450000E0
+/* 000665 0x80C064D4 */ .word	0x460000E4
+/* 000666 0x80C064D8 */ .word	0x45000178
+/* 000667 0x80C064DC */ .word	0x460001B8
+/* 000668 0x80C064E0 */ .word	0x4400030C
+/* 000669 0x80C064E4 */ .word	0x45000340
+/* 000670 0x80C064E8 */ .word	0x4600034C
+/* 000671 0x80C064EC */ .word	0x44000470
+/* 000672 0x80C064F0 */ .word	0x44000508
+/* 000673 0x80C064F4 */ .word	0x450007EC
+/* 000674 0x80C064F8 */ .word	0x460007F0
+/* 000675 0x80C064FC */ .word	0x82000010
+/* 000676 0x80C06500 */ .word	0x82000014
+/* 000677 0x80C06504 */ .word	0x82000018
+/* 000678 0x80C06508 */ .word	0x8200001C
+glabel enBombalOverlayInfoOffset
+/* 000679 0x80C0650C */ .word	0x00000070

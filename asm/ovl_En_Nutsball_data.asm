@@ -1,0 +1,54 @@
+.set noat # allow use of $at
+.set noreorder # don't insert nops after branches
+.set gp=64 # allow use of 64bit registers
+.macro glabel label
+    .global \label
+    \label:
+.endm
+
+glabel D_809861D0
+/* 000356 0x809861D0 */ .word	0x00DA0600
+/* 000357 0x809861D4 */ .word	0x00000010
+/* 000358 0x809861D8 */ .word	0x00010000
+/* 000359 0x809861DC */ .word	0x00000194
+/* 000360 0x809861E0 */ .word	EnNutsball_Init
+/* 000361 0x809861E4 */ .word	EnNutsball_Destroy
+/* 000362 0x809861E8 */ .word	EnNutsball_Update
+/* 000363 0x809861EC */ .word	EnNutsball_Draw
+glabel D_809861F0
+/* 000364 0x809861F0 */ .word	0x0A110939
+/* 000365 0x809861F4 */ .word	0x20010000
+/* 000366 0x809861F8 */ .word	0x00000000
+/* 000367 0x809861FC */ .word	0xF7CFFFFF
+/* 000368 0x80986200 */ .word	0x00040000
+/* 000369 0x80986204 */ .word	0xF7CFFFFF
+/* 000370 0x80986208 */ .word	0x00000000
+/* 000371 0x8098620C */ .word	0x11010100
+/* 000372 0x80986210 */ .word	0x000D000D
+/* 000373 0x80986214 */ .word	0x00000000
+/* 000374 0x80986218 */ .word	0x00000000
+/* 000375 0x8098621C */ .word	0x00000000
+glabel D_80986220
+/* 000376 0x80986220 */ .word	0x3C23D70A
+/* 000377 0x80986224 */ .word	0x00000000
+/* 000378 0x80986228 */ .word	0x00000000
+/* 000379 0x8098622C */ .word	0x00000000
+glabel enNutsballOverlayInfo
+/* 000380 0x80986230 */ .word	0x00000590
+/* 000381 0x80986234 */ .word	0x00000050
+/* 000382 0x80986238 */ .word	0x00000010
+/* 000383 0x8098623C */ .word	0x00000000
+/* 000384 0x80986240 */ .word	0x0000000A
+glabel enNutsballOverlayRelocations
+/* 000385 0x80986244 */ .word	0x4500002C
+/* 000386 0x80986248 */ .word	0x46000030
+/* 000387 0x8098624C */ .word	0x440000B4
+/* 000388 0x80986250 */ .word	0x44000240
+/* 000389 0x80986254 */ .word	0x45000410
+/* 000390 0x80986258 */ .word	0x46000414
+/* 000391 0x8098625C */ .word	0x82000010
+/* 000392 0x80986260 */ .word	0x82000014
+/* 000393 0x80986264 */ .word	0x82000018
+/* 000394 0x80986268 */ .word	0x8200001C
+glabel enNutsballOverlayInfoOffset
+/* 000395 0x8098626C */ .word	0x00000040

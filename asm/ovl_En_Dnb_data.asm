@@ -1,0 +1,58 @@
+.set noat # allow use of $at
+.set noreorder # don't insert nops after branches
+.set gp=64 # allow use of 64bit registers
+.macro glabel label
+    .global \label
+    \label:
+.endm
+
+glabel D_80A50C90
+/* 000944 0x80A50C90 */ .word	0x01670100
+/* 000945 0x80A50C94 */ .word	0x000000B0
+/* 000946 0x80A50C98 */ .word	0x01890000
+/* 000947 0x80A50C9C */ .word	0x00003538
+/* 000948 0x80A50CA0 */ .word	EnDnb_Init
+/* 000949 0x80A50CA4 */ .word	EnDnb_Destroy
+/* 000950 0x80A50CA8 */ .word	EnDnb_Update
+/* 000951 0x80A50CAC */ .word	EnDnb_Draw
+glabel D_80A50CB0
+/* 000952 0x80A50CB0 */ .word	0x00000000
+/* 000953 0x80A50CB4 */ .word	0x00000000
+/* 000954 0x80A50CB8 */ .word	0x447A0000
+glabel D_80A50CBC
+/* 000955 0x80A50CBC */ .word	0x0408F7E0
+/* 000956 0x80A50CC0 */ .word	0x0408F3E0
+/* 000957 0x80A50CC4 */ .word	0x0408EFE0
+/* 000958 0x80A50CC8 */ .word	0x0408EBE0
+/* 000959 0x80A50CCC */ .word	0x0408E7E0
+/* 000960 0x80A50CD0 */ .word	0x0408E3E0
+/* 000961 0x80A50CD4 */ .word	0x0408DFE0
+/* 000962 0x80A50CD8 */ .word	0x0408DBE0
+/* 000963 0x80A50CDC */ .word	0x00000000
+glabel enDnbOverlayInfo
+/* 000964 0x80A50CE0 */ .word	0x00000EC0
+/* 000965 0x80A50CE4 */ .word	0x00000050
+/* 000966 0x80A50CE8 */ .word	0x00000000
+/* 000967 0x80A50CEC */ .word	0x00000000
+/* 000968 0x80A50CF0 */ .word	0x00000011
+glabel enDnbOverlayRelocations
+/* 000969 0x80A50CF4 */ .word	0x450003A8
+/* 000970 0x80A50CF8 */ .word	0x460003B0
+/* 000971 0x80A50CFC */ .word	0x44000470
+/* 000972 0x80A50D00 */ .word	0x4400053C
+/* 000973 0x80A50D04 */ .word	0x4400062C
+/* 000974 0x80A50D08 */ .word	0x440006E0
+/* 000975 0x80A50D0C */ .word	0x440006F8
+/* 000976 0x80A50D10 */ .word	0x44000718
+/* 000977 0x80A50D14 */ .word	0x440009B8
+/* 000978 0x80A50D18 */ .word	0x440009C8
+/* 000979 0x80A50D1C */ .word	0x440009D8
+/* 000980 0x80A50D20 */ .word	0x45000DC8
+/* 000981 0x80A50D24 */ .word	0x46000E30
+/* 000982 0x80A50D28 */ .word	0x82000010
+/* 000983 0x80A50D2C */ .word	0x82000014
+/* 000984 0x80A50D30 */ .word	0x82000018
+/* 000985 0x80A50D34 */ .word	0x8200001C
+/* 000986 0x80A50D38 */ .word	0x00000000
+glabel enDnbOverlayInfoOffset
+/* 000987 0x80A50D3C */ .word	0x00000060

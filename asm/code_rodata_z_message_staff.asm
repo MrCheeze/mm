@@ -1,0 +1,51 @@
+.set noat # allow use of $at
+.set noreorder # don't insert nops after branches
+.set gp=64 # allow use of 64bit registers
+.macro glabel label
+    .global \label
+    \label:
+.endm
+
+glabel __switch_D_801DF860
+/* 321384 0x801DF860 */ .word	.L_8015E948
+/* 321385 0x801DF864 */ .word	.L_8015F570
+/* 321386 0x801DF868 */ .word	.L_8015F728
+/* 321387 0x801DF86C */ .word	.L_8015EA04
+/* 321388 0x801DF870 */ .word	.L_8015E9D8
+/* 321389 0x801DF874 */ .word	.L_8015EA90
+/* 321390 0x801DF878 */ .word	.L_8015EAC8
+/* 321391 0x801DF87C */ .word	.L_8015EB20
+/* 321392 0x801DF880 */ .word	.L_8015EBCC
+/* 321393 0x801DF884 */ .word	.L_8015F694
+/* 321394 0x801DF888 */ .word	.L_8015F6D8
+/* 321395 0x801DF88C */ .word	.L_8015EC2C
+/* 321396 0x801DF890 */ .word	.L_8015EBD8
+/* 321397 0x801DF894 */ .word	.L_8015F610
+/* 321398 0x801DF898 */ .word	.L_8015F728
+/* 321399 0x801DF89C */ .word	.L_8015F5DC
+/* 321400 0x801DF8A0 */ .word	.L_8015EC74
+/* 321401 0x801DF8A4 */ .word	.L_8015ECF8
+/* 321402 0x801DF8A8 */ .word	.L_8015ED70
+/* 321403 0x801DF8AC */ .word	.L_8015F42C
+/* 321404 0x801DF8B0 */ .word	.L_8015ED7C
+/* 321405 0x801DF8B4 */ .word	.L_8015F728
+/* 321406 0x801DF8B8 */ .word	.L_8015F728
+/* 321407 0x801DF8BC */ .word	.L_8015F728
+/* 321408 0x801DF8C0 */ .word	.L_8015F728
+/* 321409 0x801DF8C4 */ .word	.L_8015F45C
+/* 321410 0x801DF8C8 */ .word	.L_8015F478
+/* 321411 0x801DF8CC */ .word	.L_8015F4F4
+/* 321412 0x801DF8D0 */ .word	.L_8015F728
+/* 321413 0x801DF8D4 */ .word	.L_8015F728
+/* 321414 0x801DF8D8 */ .word	.L_8015F728
+/* 321415 0x801DF8DC */ .word	.L_8015E9E4
+glabel D_801DF8E0
+/* 321416 0x801DF8E0 */ .word	0x3B6BEDFA
+glabel __switch_D_801DF8E4
+/* 321417 0x801DF8E4 */ .word	.L_80160184
+/* 321418 0x801DF8E8 */ .word	.L_80160184
+/* 321419 0x801DF8EC */ .word	.L_80160184
+/* 321420 0x801DF8F0 */ .word	.L_801602D4
+/* 321421 0x801DF8F4 */ .word	.L_801602D4
+/* 321422 0x801DF8F8 */ .word	.L_80160A34
+/* 321423 0x801DF8FC */ .word	.L_801602D4

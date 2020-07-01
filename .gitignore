@@ -7,7 +7,6 @@ build/*
 baserom/*
 decomp/*
 S/*
-asm/*
 font_test/*
 ido/*
 __pychahe__/*
